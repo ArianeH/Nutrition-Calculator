@@ -4,24 +4,24 @@
 
     <div class="col-sm-7">
       <h2 class="calculator-heading">Calculating your daily nutrition</h2>
-      <p>What did you eat?</p>
+      <p class="intro-question">What did you eat?</p>
 
-      <div class="dropdown">
+      <div class="dropdown select-food-dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Select Food Type
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
           <li>
-            <a href="">Fruits</a>
+            <button class="fruit-select">Fruits</button>
           </li>
           <li>
-            <a href="">Diary</a>
+            <a href="#" class="diary-select">Diary</a>
           </li>
         </ul>
       </div>
 
-      <div class="dropdown">
+      <div class="dropdown select-fruit-dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Select Fruit Type
           <span class="caret"></span>
@@ -37,6 +37,7 @@
       </div>
 
     </div>
+
 
     <div class="col-sm-5 nutrition-facts">
       <h4 class="nutrition-heading">Nutrition Facts - 100 g Apple</h4>
@@ -106,7 +107,7 @@
           <th>% Daily Value</th>
         </tr>
         <tr>
-        <td>Calories</td>
+          <td>Calories</td>
           <td>61</td>
         </tr>
         <tr>
@@ -158,4 +159,12 @@
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    $('.fruit-select').click(function() {
+      $('.select-fruit-dropdown').addClass('visible');
+    });
+  });
+</script>
 
