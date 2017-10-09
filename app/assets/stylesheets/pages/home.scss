@@ -20,6 +20,10 @@
   font-weight: lighter;
 }
 
+.dropdown {
+  width: 200px;
+}
+
 .select-food-dropdown {
   margin-bottom: 20px;
   button {
@@ -29,14 +33,29 @@
 
 .select-fruit-dropdown {
   margin-bottom: 20px;
-  visibility: hidden;
+  display: none;
   button {
     font-weight: lighter;
   }
 }
 
-.visible {
-  visibility: visible;
+.select-dairy-dropdown {
+  margin-bottom: 20px;
+  display: none;
+  button {
+    font-weight: lighter;
+  }
+}
+
+.select-btn {
+  background-color: white;
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+
+.select-btn:hover {
+  background-color: #efefef;
 }
 
 .nutrition-facts {
@@ -45,6 +64,7 @@
 
 .nutrition-table {
   width: 100%;
+  display: none;
   th {
     font-weight: normal;
   }
@@ -52,6 +72,10 @@
     font-size: 16px;
     font-weight: lighter;
   }
+}
+
+.visible {
+  display: block;
 }
 
 .indented {

@@ -13,10 +13,10 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
           <li>
-            <button class="fruit-select">Fruits</button>
+            <button class="select-btn fruit-select">Fruits</button>
           </li>
           <li>
-            <a href="#" class="diary-select">Diary</a>
+            <button class="select-btn dairy-select">Dairy</button>
           </li>
         </ul>
       </div>
@@ -28,10 +28,25 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
           <li>
-            <a href="">Medium sized Apple</a>
+            <button class="select-btn apple-select">Medium sized Apple</button>
           </li>
           <li>
-            <a href="">About 100 g of Apple</a>
+            <button class="select-btn apple-100-select">About 100 g of Apple</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dropdown select-dairy-dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select Dairy Type
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
+          <li>
+            <button class="select-btn milk-select">Glass of milk</button>
+          </li>
+          <li>
+            <button class="select-btn milk-100-select">About 100 g of Milk</button>
           </li>
         </ul>
       </div>
@@ -40,121 +55,124 @@
 
 
     <div class="col-sm-5 nutrition-facts">
-      <h4 class="nutrition-heading">Nutrition Facts - 100 g Apple</h4>
 
-      <table class="nutrition-table">
-        <tr>
-          <th>Nutrient</th>
-          <th>Amount</th>
-          <th>% Daily Value</th>
-        </tr>
-        <tr>
-          <td>Calories</td>
-          <td>52</td>
-        </tr>
-        <tr>
-          <td>Protein</td>
-          <td>0.3 g</td>
-        </tr>
-        <tr>
-          <td>Carbs</td>
-          <td>13.8 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Sugar</td>
-          <td>10.4 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Fiber</td>
-          <td>2.4 g</td>
-        </tr>
-        <tr>
-          <td>Fat</td>
-          <td>0.2 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Saturated</td>
-          <td>0.03 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Monounsaturated</td>
-          <td>0.01 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Polyunsaturated</td>
-          <td>0.05 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Omega-3</td>
-          <td>0.01 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Omega-6</td>
-          <td>0.04 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Trans fat</td>
-          <td>0 g</td>
-        </tr>
-      </table>
+      <div class="nutrition-table apple-nutrition">
+        <h4 class="nutrition-heading">Nutrition Facts - 100 g Apple</h4>
+        <table class="one-nutrition-table">
+          <tr>
+            <th>Nutrient</th>
+            <th>Amount</th>
+            <th>% Daily Value</th>
+          </tr>
+          <tr>
+            <td>Calories</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>0.3 g</td>
+          </tr>
+          <tr>
+            <td>Carbs</td>
+            <td>13.8 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Sugar</td>
+            <td>10.4 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Fiber</td>
+            <td>2.4 g</td>
+          </tr>
+          <tr>
+            <td>Fat</td>
+            <td>0.2 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Saturated</td>
+            <td>0.03 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Monounsaturated</td>
+            <td>0.01 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Polyunsaturated</td>
+            <td>0.05 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Omega-3</td>
+            <td>0.01 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Omega-6</td>
+            <td>0.04 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Trans fat</td>
+            <td>0 g</td>
+          </tr>
+        </table>
+      </div>
 
-      <h4 class="nutrition-heading">Nutrition Facts - Milk, 3.25% fat - 100 grams</h4>
-
-      <table class="nutrition-table">
-        <tr>
-          <th>Nutrient</th>
-          <th>Amount</th>
-          <th>% Daily Value</th>
-        </tr>
-        <tr>
-          <td>Calories</td>
-          <td>61</td>
-        </tr>
-        <tr>
-          <td>Protein</td>
-          <td>3.2 g</td>
-        </tr>
-        <tr>
-          <td>Carbs</td>
-          <td>4.8 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Sugar</td>
-          <td>5.1 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Fiber</td>
-          <td>0 g</td>
-        </tr>
-        <tr>
-          <td>Fat</td>
-          <td>3.3 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Saturated</td>
-          <td>1.87 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Monounsaturated</td>
-          <td>0.81 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Polyunsaturated</td>
-          <td>0.2 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Omega-3</td>
-          <td>0.08 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Omega-6</td>
-          <td>0.12 g</td>
-        </tr>
-        <tr>
-          <td class="indented">Trans fat</td>
-          <td> </td>
-        </tr>
-      </table>
+      <div class="nutrition-table milk-nutrition">
+        <h4 class="nutrition-heading">Nutrition Facts - Milk, 3.25% fat - 100 grams</h4>
+        <table class="one-nutrition-table">
+          <tr>
+            <th>Nutrient</th>
+            <th>Amount</th>
+            <th>% Daily Value</th>
+          </tr>
+          <tr>
+            <td>Calories</td>
+            <td>61</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>3.2 g</td>
+          </tr>
+          <tr>
+            <td>Carbs</td>
+            <td>4.8 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Sugar</td>
+            <td>5.1 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Fiber</td>
+            <td>0 g</td>
+          </tr>
+          <tr>
+            <td>Fat</td>
+            <td>3.3 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Saturated</td>
+            <td>1.87 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Monounsaturated</td>
+            <td>0.81 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Polyunsaturated</td>
+            <td>0.2 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Omega-3</td>
+            <td>0.08 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Omega-6</td>
+            <td>0.12 g</td>
+          </tr>
+          <tr>
+            <td class="indented">Trans fat</td>
+            <td> </td>
+          </tr>
+        </table>
+      </div>
 
     </div>
   </div>
@@ -164,7 +182,25 @@
   $(document).ready(function() {
     $('.fruit-select').click(function() {
       $('.select-fruit-dropdown').addClass('visible');
+      $('.select-dairy-dropdown').removeClass('visible');
     });
+    $('.dairy-select').click(function() {
+      $('.select-dairy-dropdown').addClass('visible');
+      $('.select-fruit-dropdown').removeClass('visible');
+    });
+    $('.apple-select').click(function() {
+      $('.apple-nutrition').addClass('visible');
+      $('.milk-nutrition').removeClass('visible');
+    });
+    $('.apple-100-select').click(function() {
+      $('.apple-nutrition').addClass('visible');
+      $('.milk-nutrition').removeClass('visible');
+    });
+  });
+
+  $(".dropdown-menu li button").click(function(){
+    $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+    $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
   });
 </script>
 
