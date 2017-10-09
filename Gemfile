@@ -39,6 +39,7 @@ gem 'sprockets-es6'
 gem 'jquery-rails'
 
 gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 gem "font-awesome-sass"
 
 group :development, :test do
