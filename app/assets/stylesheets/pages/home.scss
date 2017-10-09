@@ -16,6 +16,29 @@
   margin-bottom: 30px;
 }
 
+.intro-question {
+  font-weight: lighter;
+}
+
+.select-food-dropdown {
+  margin-bottom: 20px;
+  button {
+    font-weight: lighter;
+  }
+}
+
+.select-fruit-dropdown {
+  margin-bottom: 20px;
+  visibility: hidden;
+  button {
+    font-weight: lighter;
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
 .nutrition-facts {
   padding-top: 85px;
 }
@@ -40,5 +63,5 @@
   padding: 5px;
   text-align: center;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
 }
