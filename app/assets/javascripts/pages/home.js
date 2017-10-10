@@ -14,7 +14,7 @@
       $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
       $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
       $('.close').click(function(){
-        $('.selected-food').addClass('invisible');
+        $(this).parents('.selected-food').addClass('invisible');
       });
       i++;
     });
@@ -28,7 +28,7 @@
       $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
       $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
       $('.close').click(function(){
-        $('.selected-food').addClass('invisible');
+        $(this).parents('.selected-food').addClass('invisible');
       });
       i++;
     });
