@@ -78,10 +78,6 @@
   }
 }
 
-.visible {
-  display: block;
-}
-
 .indented {
   padding-left: 15px;
 }
@@ -92,4 +88,21 @@
   text-align: center;
   font-size: 18px;
   font-weight: 300;
+}
+
+.selected-food {
+  background-color: lightsteelblue;
+  border-radius: 2px;
+  min-width: 175px;
+  height: 37px;
+  font-weight: lighter;
+  padding: 5.5px;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
 }
