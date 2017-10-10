@@ -9,44 +9,8 @@
       $('.select-dairy-dropdown').addClass('visible');
     });
 
-    $('.apple').click(function() {
-      var className = $(this).child.attr('class');
-      $('.nutrition-table').removeClass('visible');
-      $('div.' + className).addClass('visible');
-      $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
-      $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
-      $('.close').click(function(){
-        $(this).parents('.selected-food').addClass('invisible');
-      });
-      i++;
-    });
-
     $('.one-select').click(function() {
       var className = $(this).children().attr('class');
-      $('.nutrition-table').removeClass('visible');
-      $('div.' + className).addClass('visible');
-      $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
-      $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
-      $('.close').click(function(){
-        $(this).parents('.selected-food').addClass('invisible');
-      });
-      i++;
-    });
-
-    $('.milk').click(function() {
-      var className = $(this).attr('class');
-      $('.nutrition-table').removeClass('visible');
-      $('div.' + className).addClass('visible');
-      $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
-      $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
-      $('.close').click(function(){
-        $(this).parents('.selected-food').addClass('invisible');
-      });
-      i++;
-    });
-
-    $('.milk-100').click(function() {
-      var className = $(this).attr('class');
       $('.nutrition-table').removeClass('visible');
       $('div.' + className).addClass('visible');
       $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
