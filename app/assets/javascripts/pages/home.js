@@ -1,40 +1,24 @@
   $(document).ready(function() {
     var i = 1
     $('.fruit-select').click(function() {
-      $('.select-fruit-dropdown').addClass('visible');
       $('.select-dairy-dropdown').removeClass('visible');
+      $('.select-fruit-dropdown').addClass('visible');
     });
     $('.dairy-select').click(function() {
-      $('.select-dairy-dropdown').addClass('visible');
       $('.select-fruit-dropdown').removeClass('visible');
+      $('.select-dairy-dropdown').addClass('visible');
     });
-    $('.apple-select').click(function() {
-      $('.apple-nutrition').addClass('visible');
-      $('.milk-nutrition').removeClass('visible');
+
+    $('.one-select').click(function() {
+      var className = $(this).children().attr('class');
+      $('.nutrition-table').removeClass('visible');
+      $('div.' + className).addClass('visible');
       $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
       $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
       $('.close').click(function(){
         $(this).parents('.selected-food').addClass('invisible');
       });
       i++;
-    });
-    $('.apple-100-select').click(function() {
-      $('.apple-nutrition').addClass('visible');
-      $('.milk-nutrition').removeClass('visible');
-    });
-    $('.milk-select').click(function() {
-      $('.milk-nutrition').addClass('visible');
-      $('.apple-nutrition').removeClass('visible');
-      $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
-      $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
-      $('.close').click(function(){
-        $(this).parents('.selected-food').addClass('invisible');
-      });
-      i++;
-    });
-    $('.milk-100-select').click(function() {
-      $('.milk-nutrition').addClass('visible');
-      $('.apple-nutrition').removeClass('visible');
     });
 
     $(".dropdown-menu li button").click(function(){

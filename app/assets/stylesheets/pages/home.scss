@@ -8,7 +8,7 @@
   background-position: 0 -160px;
   height: 130px;
   margin-top: 0px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .calculator-heading {
@@ -76,18 +76,16 @@
     font-size: 16px;
     font-weight: lighter;
   }
-}
-
-.indented {
-  padding-left: 15px;
-}
-
-.nutrition-heading {
-  background-color: #e4c6b4;
-  padding: 5px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 300;
+  .indented {
+    padding-left: 15px;
+  }
+  .nutrition-heading {
+    background-color: #e4c6b4;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 
 .selected-food {
