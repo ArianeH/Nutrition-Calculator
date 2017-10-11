@@ -10,14 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171010194648) do
+ActiveRecord::Schema.define(version: 20171011135948) do
 
   create_table "nutrition_items", force: :cascade do |t|
     t.string "name"
     t.integer "calories"
     t.integer "protein"
     t.integer "carbs"
+    t.integer "sugar"
+    t.integer "fiber"
     t.integer "fat"
+    t.integer "saturated"
+    t.integer "monounsaturated"
+    t.integer "polyunsaturated"
+    t.integer "omega_3"
+    t.integer "omega_6"
+    t.integer "trans_fat"
   end
 
 end

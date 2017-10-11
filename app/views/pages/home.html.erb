@@ -3,8 +3,6 @@
 <div class="content-wrapper">
     <div class="row">
 
-    <h1><%= @nutrition.first.name %></h1>
-
     <div class="col-sm-7">
       <h2 class="calculator-heading">Calculating your daily nutrition</h2>
       <p class="intro-question">What did you eat?</p>
@@ -61,7 +59,7 @@
       <div class="col-sm-5 nutrition-facts">
 
         <div class="nutrition-table apple-100">
-          <h4 class="nutrition-heading">Nutrition Facts - 100 g Apple</h4>
+          <h4 class="nutrition-heading"><%= NutritionItem.first.name %></h4>
           <table class="one-nutrition-table">
             <tr>
               <th>Nutrient</th>
@@ -70,110 +68,51 @@
             </tr>
             <tr>
               <td>Calories</td>
-              <td>52</td>
+              <td><%= NutritionItem.first.calories %></td>
             </tr>
             <tr>
               <td>Protein</td>
-              <td>0.3 g</td>
+              <td><%= NutritionItem.first.protein %> g</td>
             </tr>
             <tr>
               <td>Carbs</td>
-              <td>13.8 g</td>
+              <td><%= NutritionItem.first.carbs %> g</td>
             </tr>
             <tr>
               <td class="indented">Sugar</td>
-              <td>10.4 g</td>
+              <td><%= NutritionItem.first.sugar %> g</td>
             </tr>
             <tr>
               <td class="indented">Fiber</td>
-              <td>2.4 g</td>
+              <td><%= NutritionItem.first.fiber %> g</td>
             </tr>
             <tr>
               <td>Fat</td>
-              <td>0.2 g</td>
+              <td><%= NutritionItem.first.fat %> g</td>
             </tr>
             <tr>
               <td class="indented">Saturated</td>
-              <td>0.03 g</td>
+              <td><%= NutritionItem.first.saturated %> g</td>
             </tr>
             <tr>
               <td class="indented">Monounsaturated</td>
-              <td>0.01 g</td>
+              <td><%= NutritionItem.first.monounsaturated %> g</td>
             </tr>
             <tr>
               <td class="indented">Polyunsaturated</td>
-              <td>0.05 g</td>
+              <td><%= NutritionItem.first.polyunsaturated %> g</td>
             </tr>
             <tr>
               <td class="indented">Omega-3</td>
-              <td>0.01 g</td>
+              <td><%= NutritionItem.first.omega_3 %> g</td>
             </tr>
             <tr>
               <td class="indented">Omega-6</td>
-              <td>0.04 g</td>
+              <td><%= NutritionItem.first.omega_6 %> g</td>
             </tr>
             <tr>
               <td class="indented">Trans fat</td>
-              <td>0 g</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="nutrition-table milk-100">
-          <h4 class="nutrition-heading">Nutrition Facts - Milk, 3.25% fat - 100 grams</h4>
-          <table class="one-nutrition-table">
-            <tr>
-              <th>Nutrient</th>
-              <th>Amount</th>
-              <th>% Daily Value</th>
-            </tr>
-            <tr>
-              <td>Calories</td>
-              <td>61</td>
-            </tr>
-            <tr>
-              <td>Protein</td>
-              <td>3.2 g</td>
-            </tr>
-            <tr>
-              <td>Carbs</td>
-              <td>4.8 g</td>
-            </tr>
-            <tr>
-              <td class="indented">Sugar</td>
-              <td>5.1 g</td>
-            </tr>
-            <tr>
-              <td class="indented">Fiber</td>
-              <td>0 g</td>
-            </tr>
-            <tr>
-              <td>Fat</td>
-              <td>3.3 g</td>
-            </tr>
-            <tr>
-              <td class="indented">Saturated</td>
-              <td>1.87 g</td>
-            </tr>
-            <tr>
-              <td class="indented">Monounsaturated</td>
-              <td>0.81 g</td>
-            </tr>
-            <tr>
-              <td class="indented">Polyunsaturated</td>
-              <td>0.2 g</td>
-            </tr>
-            <tr>
-              <td class="indented">Omega-3</td>
-              <td>0.08 g</td>
-            </tr>
-            <tr>
-              <td class="indented">Omega-6</td>
-              <td>0.12 g</td>
-            </tr>
-            <tr>
-              <td class="indented">Trans fat</td>
-              <td> </td>
+              <td><%= NutritionItem.first.trans_fat %> g</td>
             </tr>
           </table>
         </div>
