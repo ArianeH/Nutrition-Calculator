@@ -15,6 +15,7 @@
       $('div.' + className).addClass('visible');
       $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
       $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
+      $('.placeholder-selected-food').addClass('invisible');
       $('.close').click(function(){
         $(this).parents('.selected-food').addClass('invisible');
       });
