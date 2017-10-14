@@ -39,7 +39,7 @@
         </div>
 
 
-        <%= form_tag("/next_step", method: 'post') do %>
+        <%= form_tag("/calculate", method: 'post') do %>
 
         <div class="dropdown select-dairy-dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,16 +58,16 @@
 
         <% end %>
 
-
-
         <div class="container-selected-food"><span class="placeholder-selected-food">Add food you ate by selecting it above</span></div>
 
       </div>
 
       <div class="col-xs-12 col-sm-5">
+        <div id="result-partial">
 
-        <%= render "nutrition-calculation" %>
+        <%= render partial: "pages/nutrition-calculation", locals: { sum_calories: @sum_calories } %>
 
+        </div>
       </div>
 
         <!--       <div class="col-sm-5 nutrition-facts">
