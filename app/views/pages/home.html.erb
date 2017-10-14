@@ -1,10 +1,11 @@
-<h1 class="heading">Nutrition Calculator</h1>
 <div class="container">
   <div class="content-wrapper">
     <div class="row">
 
       <div class="col-xs-12 col-sm-7">
+
         <h2 class="calculator-heading">Calculating your daily nutrition</h2>
+
         <p class="intro-question">What did you eat?</p>
 
         <div class="dropdown select-food-dropdown">
@@ -37,6 +38,9 @@
           </ul>
         </div>
 
+
+        <%= form_tag("/next_step", method: 'post') do %>
+
         <div class="dropdown select-dairy-dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Select Dairy Type
@@ -51,6 +55,10 @@
             </li>
           </ul>
         </div>
+
+        <% end %>
+
+
 
         <div class="container-selected-food"><span class="placeholder-selected-food">Add food you ate by selecting it above</span></div>
 

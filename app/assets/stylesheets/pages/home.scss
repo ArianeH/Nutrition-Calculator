@@ -1,41 +1,20 @@
 body {
   background-image: linear-gradient(rgba(255, 209, 141, 0.25), rgba(255, 209, 141, 0.25)), url("whitey.png");
   background-repeat:repeat;
+  padding-top: 70px;
 }
-
-.heading {
-  color: white;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-  background-image: linear-gradient(rgba(255, 209, 141, 0.25), rgba(255, 209, 141, 0.25)), url("food.jpg");
-  background-size: cover;
-  background-position: 0 -160px;
-  height: 130px;
-  margin-top: 0px;
-  padding-top: 30px;
-}
-
-.content-wrapper {
-
-}
-
 .calculator-heading {
   font-family: 'Quicksand', sans-serif;
   font-weight: lighter;
   margin-bottom: 30px;
 }
-
 .intro-question {
   font-family: 'Quicksand', sans-serif;
   font-weight: lighter;
 }
-
 .dropdown {
   width: 200px;
 }
-
 .select-food-dropdown {
   margin-bottom: 20px;
   button {
@@ -49,7 +28,6 @@ body {
     color: white;
   }
 }
-
 .select-fruit-dropdown {
   margin-bottom: 20px;
   display: none;
@@ -64,7 +42,6 @@ body {
     color: white;
   }
 }
-
 .select-dairy-dropdown {
   margin-bottom: 20px;
   display: none;
@@ -79,7 +56,6 @@ body {
     color: white;
   }
 }
-
 button.select-btn {
   background-color: white;
   color: black;
@@ -87,12 +63,10 @@ button.select-btn {
   text-align: left;
   width: 100%;
 }
-
 button.select-btn:hover {
   background-color: #efefef;
   color: black;
 }
-
 .nutrition-facts {
   padding-top: 85px;
 }

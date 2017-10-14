@@ -1,0 +1,22 @@
+.nutrition-navbar {
+  background-image: linear-gradient(rgba(109, 88, 56, 0.25), rgba(109, 88, 56, 0.25)), url("food.jpg");
+  background-size: cover;
+  background-position: 0 -160px;
+  height: 70px;
+}
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.2s ease-in-out;
+}
+.nav-up {
+  top: -70px;
+}
+.nutrition-brand {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: white !important;
+}
+
