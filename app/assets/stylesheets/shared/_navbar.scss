@@ -8,13 +8,14 @@
   width: 100%;
   transition: top 0.15s ease-in-out;
   z-index: 2;
+  .nutrition-brand {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: white !important;
+    margin-left: -9px !important;
+  }
 }
 .nav-up {
   top: -70px;
-}
-.nutrition-brand {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 38px;
-  font-weight: 400;
-  color: white !important;
 }

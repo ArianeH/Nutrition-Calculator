@@ -1,0 +1,22 @@
+.nutrition-heading {
+  // background-color: #e4c6b4;
+  padding: 5px;
+  font-size: 38px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+.one-nutrition-table {
+  width: 100%;
+  // display: none;
+  th {
+    font-weight: normal;
+  }
+  td {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  .indented {
+    padding-left: 15px;
+  }
+}

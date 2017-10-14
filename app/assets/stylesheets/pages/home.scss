@@ -70,29 +70,6 @@ button.select-btn:hover {
 .nutrition-facts {
   padding-top: 85px;
 }
-
-.nutrition-table {
-  width: 100%;
-  display: none;
-  th {
-    font-weight: normal;
-  }
-  td {
-    font-size: 16px;
-    font-weight: lighter;
-  }
-  .indented {
-    padding-left: 15px;
-  }
-  .nutrition-heading {
-    background-color: #e4c6b4;
-    padding: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300;
-  }
-}
-
 .container-selected-food {
   background-color: white;
   border: solid 1px lightgrey;
