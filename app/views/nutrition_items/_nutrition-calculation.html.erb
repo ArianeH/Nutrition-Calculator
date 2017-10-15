@@ -1,5 +1,4 @@
 <div class="nutrition-calculation%>" >
-<h1 style="color: red">This is <%= @sum_calories %></h1>
 
   <h2 class="nutrition-heading">Your Nutrition</h2>
   <table class="one-nutrition-table">
@@ -10,51 +9,51 @@
     </tr>
     <tr>
       <td>Calories</td>
-      <td><%= NutritionItem.first.calories + NutritionItem.second.calories %></td>
+      <td><%= selected.calories %></td>
     </tr>
     <tr>
       <td>Protein</td>
-      <td><%= NutritionItem.first.protein %> g</td>
+      <td><%= selected.protein %> g</td>
     </tr>
     <tr>
       <td>Carbs</td>
-      <td><%= NutritionItem.first.carbs %> g</td>
+      <td><%= selected.carbs %> g</td>
     </tr>
     <tr>
       <td class="indented">Sugar</td>
-      <td><%= NutritionItem.first.sugar %> g</td>
+      <td><%= selected.sugar %> g</td>
     </tr>
     <tr>
       <td class="indented">Fiber</td>
-      <td><%= NutritionItem.first.fiber %> g</td>
+      <td><%= selected.fiber %> g</td>
     </tr>
     <tr>
       <td>Fat</td>
-      <td><%= NutritionItem.first.fat %> g</td>
+      <td><%= selected.fat %> g</td>
     </tr>
     <tr>
       <td class="indented">Saturated</td>
-      <td><%= NutritionItem.first.saturated %> g</td>
+      <td><%= selected.saturated %> g</td>
     </tr>
     <tr>
       <td class="indented">Monounsaturated</td>
-      <td><%= NutritionItem.first.monounsaturated %> g</td>
+      <td><%= selected.monounsaturated %> g</td>
     </tr>
     <tr>
       <td class="indented">Polyunsaturated</td>
-      <td><%= NutritionItem.first.polyunsaturated %> g</td>
+      <td><%= selected.polyunsaturated %> g</td>
     </tr>
     <tr>
       <td class="indented">Omega-3</td>
-      <td><%= NutritionItem.first.omega_3 %> g</td>
+      <td><%= selected.omega_3 %> g</td>
     </tr>
     <tr>
       <td class="indented">Omega-6</td>
-      <td><%= NutritionItem.first.omega_6 %> g</td>
+      <td><%= selected.omega_6 %> g</td>
     </tr>
     <tr>
       <td class="indented">Trans fat</td>
-      <td><%= NutritionItem.first.trans_fat %> g</td>
+      <td><%= selected.trans_fat %> g</td>
     </tr>
   </table>
 </div>
