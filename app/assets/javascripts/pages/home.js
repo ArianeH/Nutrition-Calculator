@@ -4,15 +4,22 @@ $(document).ready(function() {
     $('.select-dairy-dropdown').removeClass('visible');
     $('.select-fruit-dropdown').addClass('visible');
   });
+
+  // $('.dropdown').click(function() {
+  //   $('.dropdown-menu').removeClass('invisible');
+  // });
+
   $('.dairy-select').click(function() {
     $('.select-fruit-dropdown').removeClass('visible');
     $('.select-dairy-dropdown').addClass('visible');
   });
 
   $('.one-select').click(function() {
-    var className = $(this).children().attr('class');
-    $('.nutrition-table').removeClass('visible');
-    $('div.' + className).addClass('visible');
+    // var className = $(this).children().attr('class');
+    // $('.nutrition-table').removeClass('visible');
+    // $('div.' + className).addClass('visible');
+    $("#secondary-dropdown").dropdown("toggle");
+    // $('.dropdown-menu').addClass('invisible');
     $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
     $('.selected-food-'+i+'').html($(this).text() + ' <button class="close">&times;</button>');
     $('.placeholder-selected-food').addClass('invisible');
