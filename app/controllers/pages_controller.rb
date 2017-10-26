@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
-    @nutrition = NutritionItem.all
+    @nutrition_items = NutritionItem.all
     @sum_selected = 0
+
   end
 end

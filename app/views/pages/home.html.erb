@@ -29,17 +29,14 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
+            <% @nutrition_items.where(category: "Fruit").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to "Medium sized Apple", calculate_path(item: "apple-100", sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
+              <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
               </div>
             </li>
-            <li>
-              <div class="calculate-link">
-                <%= link_to "About 100 g of Apple", calculate_path(item: "apple-100", sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
-              </div>
+            <% end %>
               <!-- <button class="select-btn one-select"><span class="apple-100">About 100 g of Apple</span></button> -->
-            </li>
           </ul>
         </div>
 
@@ -49,16 +46,13 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
-            <li>
-            <div class="calculate-link">
-              <%= link_to "Glass of milk", calculate_path(item: "milk-100", sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
-              </div>
-            </li>
+          <% @nutrition_items.where(category: "Dairy").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to "About 100g of milk", calculate_path(item: "milk-100", sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
+              <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
               </div>
             </li>
+            <% end %>
           </ul>
         </div>
 
