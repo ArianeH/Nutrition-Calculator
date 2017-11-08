@@ -1,3 +1,6 @@
+.footer-container {
+  position: relative;
+}
 .footer {
   background: grey;
   display: flex;
@@ -7,7 +10,7 @@
   padding: 0px 65px;
   color: white;
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 .footer-links {
@@ -28,7 +31,6 @@
 .footer .fa-heart {
   color: white;
 }
-
 .footer-copyright p {
   color: white;
   opacity: 0.70;
