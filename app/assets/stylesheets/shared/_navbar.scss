@@ -19,3 +19,12 @@
 .nav-up {
   top: -70px;
 }
+.dropdown-toggle, .dropdown-toggle:focus {
+  color: white !important;
+  background-color: transparent !important;
+  margin-left: 32px;
+}
+.dropdown-menu {
+  box-shadow: 1px 1px 10px #c7b79e;
+  border-radius: 3px;
+}
