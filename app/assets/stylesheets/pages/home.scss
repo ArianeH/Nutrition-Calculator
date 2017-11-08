@@ -22,44 +22,24 @@
 }
 .select-food-dropdown {
   margin-bottom: 20px;
-  button {
-    font-weight: lighter;
-    background-color: rgba(136, 6, 6, 0.42) !important;
-    color: white;
-  }
-  button:hover {
-    font-weight: lighter;
-    background-color: rgba(136, 6, 6, 0.6);
-    color: white;
-  }
 }
 .select-fruit-dropdown {
   margin-bottom: 20px;
   display: none;
-  button {
-    font-weight: lighter;
-    background-color: rgba(136, 6, 6, 0.42);
-    color: white;
-  }
-  button:hover {
-    font-weight: lighter;
-    background-color: rgba(136, 6, 6, 0.6);
-    color: white;
-  }
 }
 .select-dairy-dropdown {
   margin-bottom: 20px;
   display: none;
-  button {
-    font-weight: lighter;
-    background-color: rgba(136, 6, 6, 0.42);
-    color: white;
-  }
-  button:hover {
-    font-weight: lighter;
-    background-color: rgba(136, 6, 6, 0.6);
-    color: white;
-  }
+}
+button.main-selection-btn {
+  font-weight: lighter;
+  background-color: rgba(136, 6, 6, 0.42) !important;
+  color: white;
+}
+button.main-selection-btn:hover {
+  font-weight: lighter;
+  background-color: rgba(136, 6, 6, 0.6) !important;
+  color: white;
 }
 button.select-btn {
   background-color: white;
