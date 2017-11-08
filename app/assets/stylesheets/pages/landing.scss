@@ -1,7 +1,20 @@
+body {
+  padding-top: 0px;
+}
+.banner {
+ background-image: linear-gradient(rgba(109, 88, 56, 0.25), rgba(109, 88, 56, 0.25)), url("food.jpg");
+ background-size: cover;
+ background-position: 0 -160px;
+ height: 255px;
+ top: 0;
+ width: 100%;
+ padding: 30px;
+}
 #intro {
+  color: white;
   font-weight: 300;
   font-size: 22px;
-  margin: 30px;
+  margin: 0px 0px 30px 0px;
   text-align: center;
 }
 #start-btn {
