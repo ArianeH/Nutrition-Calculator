@@ -31,26 +31,28 @@
   margin-bottom: 20px;
   display: none;
 }
-button.main-selection-btn {
+button.main-selection-btn, button.main-selection-btn:focus {
   font-weight: lighter;
   background-color: rgba(136, 6, 6, 0.42) !important;
   color: white;
+  margin-left: 0px;
 }
 button.main-selection-btn:hover {
   font-weight: lighter;
   background-color: rgba(136, 6, 6, 0.6) !important;
   color: white;
 }
-button.select-btn {
+.select-btn {
   background-color: white;
   color: black;
   border: none;
   text-align: left;
   width: 100%;
 }
-button.select-btn:hover {
+.select-btn:hover {
   background-color: #efefef;
   color: black;
+  text-decoration: none;
 }
 .dropdown-menu > li > a {
   background-color: white;
