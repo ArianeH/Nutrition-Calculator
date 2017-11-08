@@ -1,7 +1,12 @@
-body {
+.main-container {
   background-image: linear-gradient(rgba(255, 209, 141, 0.25), rgba(255, 209, 141, 0.25)), url("whitey.png");
   background-repeat:repeat;
-  padding-top: 70px;
+  padding: 70px 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+.top-row {
+  margin-right: 0px !important;
 }
 .calculator-heading {
   font-family: 'Quicksand', sans-serif;
@@ -19,7 +24,7 @@ body {
   margin-bottom: 20px;
   button {
     font-weight: lighter;
-    background-color: rgba(136, 6, 6, 0.42);
+    background-color: rgba(136, 6, 6, 0.42) !important;
     color: white;
   }
   button:hover {
