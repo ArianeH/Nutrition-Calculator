@@ -1,6 +1,6 @@
 <div class="nutrition-table <% htmlClass %>" >
   <% selectedNutritionItem = NutritionItem.where(category: htmlClass).first %>
-  <h4 class="nutrition-heading"><%= selectedNutritionItem.name %></h4>
+  <h4 class="nutrition-heading"><%= "Nutrition Facts " + selectedNutritionItem.name %></h4>
   <table class="one-nutrition-table">
     <tr>
       <th>Nutrient</th>

@@ -1,7 +1,7 @@
 class NutritionItemsController < ApplicationController
 
   def calculate
-    @selected = NutritionItem.where(category: params[:item]).first
+    @selected = NutritionItem.where(code: params[:selected_code]).first
     @sum_selected = params[:sum_selected].to_i
 
     if @sum_selected

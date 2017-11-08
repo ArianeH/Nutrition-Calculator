@@ -1,10 +1,15 @@
 $('#result-partial').html("<%= escape_javascript(render partial: 'nutrition-calculation', locals: { selected: @selected, sum_selected: @sum_selected }) %>");
 
-//u can comment these
-$('.calculate-link')[0].firstChild.getAttribute("href")
-$('.calculate-link')[0].firstChild.getAttribute("href").replace("sum_selected=[^\d+$]","sum_selected=9")
-var href = $('.calculate-link').getAttribute("href")
+updateLinksWithNewSum()
 
+function updateLinksWithNewSum() {
 
-//this one does something
-$('.calculate-link').html("<%= escape_javascript(link_to 'Medium sized Apple', calculate_path(item: 'apple-100', sum_selected: @sum_selected), remote: true, class: 'select-btn one-select') %>");
+  var links = $('.calculate-link')
+
+  for (index = 0; index < links.length; ++index) {
+      link = links[index].firstElementChild 
+
+      var hrefWithUpdatedSum = link.getAttribute('href').replace(new RegExp("sum_selected=[^\d]+"), "sum_selected=<%= @sum_selected%>")
+      link.setAttribute("href", hrefWithUpdatedSum)
+  }
+}
