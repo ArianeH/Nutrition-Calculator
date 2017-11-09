@@ -20,6 +20,9 @@
             <li>
               <button class="select-btn dairy-select">Dairy</button>
             </li>
+            <li>
+            <button class="select-btn nuts-select">Nuts and Seeds</button>
+            </li>
           </ul>
         </div>
 
@@ -32,11 +35,11 @@
             <% @nutrition_items.where(category: "Fruit").each do |item| %>
             <li>
               <div class="calculate-link">
-              <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
               </div>
             </li>
             <% end %>
-              <!-- <button class="select-btn one-select"><span class="apple-100">About 100 g of Apple</span></button> -->
+            <!-- <button class="select-btn one-select"><span class="apple-100">About 100 g of Apple</span></button> -->
           </ul>
         </div>
 
@@ -46,10 +49,26 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
-          <% @nutrition_items.where(category: "Dairy").each do |item| %>
+            <% @nutrition_items.where(category: "Dairy").each do |item| %>
             <li>
               <div class="calculate-link">
-              <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
+              </div>
+            </li>
+            <% end %>
+          </ul>
+        </div>
+
+        <div class="dropdown select-nuts-dropdown">
+          <button class="btn main-selection-btn dropdown-toggle" type="button" id="secondary-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Nut or Seed Type
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
+            <% @nutrition_items.where(category: "Nuts and Seeds").each do |item| %>
+            <li>
+              <div class="calculate-link">
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
               </div>
             </li>
             <% end %>

@@ -2,17 +2,25 @@ $(document).ready(function() {
   var i = 1
   $('.fruit-select').click(function() {
     $('.select-dairy-dropdown').removeClass('visible');
+    $('.select-nuts-dropdown').removeClass('visible');
     $('.select-fruit-dropdown').addClass('visible');
   });
 
+  $('.dairy-select').click(function() {
+    $('.select-fruit-dropdown').removeClass('visible');
+    $('.select-nuts-dropdown').removeClass('visible');
+    $('.select-dairy-dropdown').addClass('visible');
+  });
+
+  $('.nuts-select').click(function() {
+    $('.select-fruit-dropdown').removeClass('visible');
+    $('.select-dairy-dropdown').removeClass('visible');
+    $('.select-nuts-dropdown').addClass('visible');
+  });
   // $('.dropdown').click(function() {
   //   $('.dropdown-menu').removeClass('invisible');
   // });
 
-  $('.dairy-select').click(function() {
-    $('.select-fruit-dropdown').removeClass('visible');
-    $('.select-dairy-dropdown').addClass('visible');
-  });
 
   $('.one-select').click(function() {
     // var className = $(this).children().attr('class');
