@@ -54,6 +54,9 @@ button.main-selection-btn:hover {
   color: black;
   text-decoration: none;
 }
+.one-select {
+  margin-left: 5px;
+}
 .dropdown-menu > li > a {
   background-color: white;
   font-weight: lighter;
@@ -70,11 +73,12 @@ a.select-btn:hover {
   padding-top: 85px;
 }
 .container-selected-food {
+  padding: 20px 10px;
   background-color: white;
   border: solid 1px lightgrey;
   border-radius: 3px;
   margin-bottom: 20px;
-  min-height: 50px;
+  min-height: 150px;
   .placeholder-selected-food {
     color: lightgrey;
     font-weight: lighter;
@@ -82,14 +86,21 @@ a.select-btn:hover {
   }
 }
 .selected-food {
+  position: relative;
   background-color: lightsteelblue;
   border-radius: 2px;
-  min-width: 175px;
-  max-width: 220px;
+  min-width: 200px;
+  max-width: 250px;
   height: 37px;
   font-weight: lighter;
   padding: 5.5px;
   margin: 5px 5px 10px 5px;
+  display: inline;
+  .close {
+    position: absolute;
+    right: 0;
+    margin-left: 5px;
+  }
 }
 
 .visible {
