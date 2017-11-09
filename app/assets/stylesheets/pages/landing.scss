@@ -8,7 +8,6 @@
 .banner {
  background: linear-gradient(rgba(109, 88, 56, 0.35), rgba(109, 88, 56, 0.35)), url("food.jpg") no-repeat center center fixed;
  background-size: cover;
- // background-repeat: no-repeat;
  background-position: 0 -160px;
  height: 65vh;
  top: 0;
@@ -62,7 +61,7 @@
 #more-info-btn {
   content: url("arrow-down.png");
   max-height: 100px;
-  margin-left: 47%;
+  margin-left: 46.5%;
 }
 #more-info-btn:hover {
   cursor: pointer;
