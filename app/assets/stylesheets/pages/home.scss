@@ -19,16 +19,12 @@
 }
 .dropdown {
   width: 200px;
-}
-.select-food-dropdown {
   margin-bottom: 20px;
 }
 .select-fruit-dropdown {
-  margin-bottom: 20px;
   display: none;
 }
 .select-dairy-dropdown {
-  margin-bottom: 20px;
   display: none;
 }
 button.main-selection-btn, button.main-selection-btn:focus {
@@ -48,6 +44,7 @@ button.main-selection-btn:hover {
   border: none;
   text-align: left;
   width: 100%;
+  font-weight: lighter;
 }
 .select-btn:hover {
   background-color: #efefef;
@@ -55,7 +52,9 @@ button.main-selection-btn:hover {
   text-decoration: none;
 }
 .one-select {
-  margin-left: 5px;
+  display: block;
+  width: 100%;
+  padding: 0px 5px;
 }
 .dropdown-menu > li > a {
   background-color: white;
@@ -73,11 +72,11 @@ a.select-btn:hover {
   padding-top: 85px;
 }
 .container-selected-food {
-  padding: 20px 10px;
+  padding: 10px 10px;
   background-color: white;
   border: solid 1px lightgrey;
   border-radius: 3px;
-  margin: 0px 30px 20px 0px;
+  margin: 0px 40px 20px 0px;
   min-height: 150px;
   .placeholder-selected-food {
     color: lightgrey;
@@ -93,10 +92,11 @@ a.select-btn:hover {
   font-weight: lighter;
   padding: 5.5px;
   margin: 5px 5px 10px 5px;
-  display: inline;
+  display: inline-block;
   .close {
     position: absolute;
     right: 0;
+    bottom: 5px;
     margin-right: 5px;
     font-weight: 300;
     font-size: 25px;
