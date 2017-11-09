@@ -1,8 +1,15 @@
+.landing-container {
+  background-image: linear-gradient(rgba(255, 209, 141, 0.25), rgba(255, 209, 141, 0.25)), url("whitey.png");
+  background-repeat:repeat;
+  padding: 50px 20px 60px 20px;
+  width: 100%;
+  min-height: 62vh;
+}
 .banner {
  background-image: linear-gradient(rgba(109, 88, 56, 0.35), rgba(109, 88, 56, 0.35)), url("food.jpg");
  background-size: cover;
  background-position: 0 -160px;
- height: 255px;
+ height: 38vh;
  top: 0;
  width: 100%;
  padding: 30px;
@@ -27,7 +34,7 @@
 .section-heading {
   font-weight: 300;
   font-size: 30px;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 15px 0px;
   text-align: center;
 }
 #intro-explanation {
@@ -37,8 +44,8 @@
 }
 .explain-item {
   color: #656565;
-  margin: 50px 20px;
-  flex: 1 1 auto;
+  margin: 50px 20px 0px 20px;
+  flex: 1 1 33%;
   display: flex;
   align-items: center;
   flex-direction: column;
