@@ -38,10 +38,11 @@
   margin: 30px 0px 40px 0px;
   text-align: center;
 }
-#intro-explanation {
+.intro-explanation {
   margin: 10px 20px;
   display: flex;
   justify-content: space-around;
+  display: none;
 }
 .explain-item {
   color: #656565;
@@ -55,4 +56,11 @@
 }
 .explain-icon {
   margin-bottom: 10px;
+}
+.visible {
+  display: block;
+}
+#more-info-btn {
+  font-size: 50px;
+  text-align: center;
 }
