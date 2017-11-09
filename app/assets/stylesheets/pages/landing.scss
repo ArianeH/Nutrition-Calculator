@@ -1,15 +1,16 @@
 .landing-container {
   background-image: linear-gradient(rgba(255, 209, 141, 0.25), rgba(255, 209, 141, 0.25)), url("whitey.png");
   background-repeat:repeat;
-  padding: 50px 20px 60px 20px;
+  padding: 30px 20px 60px 20px;
   width: 100%;
-  min-height: 62vh;
+  min-height: 35vh;
 }
 .banner {
- background-image: linear-gradient(rgba(109, 88, 56, 0.35), rgba(109, 88, 56, 0.35)), url("food.jpg");
+ background: linear-gradient(rgba(109, 88, 56, 0.35), rgba(109, 88, 56, 0.35)), url("food.jpg") no-repeat center center fixed;
  background-size: cover;
+ // background-repeat: no-repeat;
  background-position: 0 -160px;
- height: 38vh;
+ height: 65vh;
  top: 0;
  width: 100%;
  padding: 30px;
@@ -18,13 +19,13 @@
   color: white;
   font-weight: 300;
   font-size: 30px;
-  margin: 30px 0px;
+  margin: 80px 0px;
   text-align: center;
 }
 #start-btn {
   padding: 10px 20px;
   margin-left: 38%;
-  margin-top: 40px;
+  margin-top: 50px;
   border: none;
   font-size: 22px;
 }
@@ -34,7 +35,7 @@
 .section-heading {
   font-weight: 300;
   font-size: 30px;
-  margin: 0px 0px 15px 0px;
+  margin: 30px 0px 40px 0px;
   text-align: center;
 }
 #intro-explanation {
@@ -44,7 +45,7 @@
 }
 .explain-item {
   color: #656565;
-  margin: 50px 20px 0px 20px;
+  margin: 25px 20px 0px 20px;
   flex: 1 1 33%;
   display: flex;
   align-items: center;
