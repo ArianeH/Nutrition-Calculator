@@ -38,15 +38,17 @@
   margin: 30px 0px 40px 0px;
   text-align: center;
 }
-.intro-explanation {
+.intro-explanation-wrapper {
+  display: none;
+}
+#intro-explanation {
   margin: 10px 20px;
   display: flex;
   justify-content: space-around;
-  display: none;
 }
 .explain-item {
   color: #656565;
-  margin: 25px 20px 0px 20px;
+  margin: 30px 20px 30px 20px;
   flex: 1 1 33%;
   display: flex;
   align-items: center;
@@ -57,10 +59,15 @@
 .explain-icon {
   margin-bottom: 10px;
 }
-.visible {
-  display: block;
-}
 #more-info-btn {
   font-size: 50px;
+  color: #008c85;
   text-align: center;
+}
+
+#visible {
+  display: block;
+}
+#invisible {
+  display: none;
 }
