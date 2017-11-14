@@ -26,7 +26,7 @@
           </ul>
         </div>
 
-        <!-- <div class="select-dropdown-placeholder"></div> -->
+        <div class="select-dropdown-placeholder select-specific-dropdown"></div>
 
         <div class="dropdown select-specific-dropdown invisible" id="fruit-select-dropdown">
           <button class="btn main-selection-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -83,17 +83,12 @@
 
       <div class="col-xs-12 col-sm-5">
         <div id="result-partial">
-
           <% if @selected %>
           <%= render partial: 'nutrition-calculation', locals: { selected: @selected, sum_selected: @sum_selected } %>
           <% end %>
         </div>
       </div>
 
-        <!--       <div class="col-sm-5 nutrition-facts">
-
-
-      </div> -->
     </div>
   </div>
 </div>

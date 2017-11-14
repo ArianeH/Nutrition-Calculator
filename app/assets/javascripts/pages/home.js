@@ -9,7 +9,6 @@ $(document).ready(function() {
 
   $('.one-select').click(function() {
     $("#secondary-dropdown").dropdown("toggle");
-    // $('.dropdown-menu').addClass('invisible');
     $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
     $('.selected-food-'+i+'').html('<span class="selected-food-text">' + $(this).text() + '</span>' + ' <button class="close">&times;</button>');
     $('.placeholder-selected-food').addClass('invisible');
