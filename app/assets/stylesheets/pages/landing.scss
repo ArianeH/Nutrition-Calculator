@@ -3,13 +3,13 @@
   background-repeat:repeat;
   padding: 30px 20px 60px 20px;
   width: 100%;
-  min-height: 35vh;
+  min-height: 40vh;
 }
 .banner {
  background: linear-gradient(rgba(109, 88, 56, 0.35), rgba(109, 88, 56, 0.35)), url("food.jpg") no-repeat center center fixed;
  background-size: cover;
  background-position: 0 -160px;
- height: 65vh;
+ height: 60vh;
  top: 0;
  width: 100%;
  padding: 30px;
@@ -34,11 +34,8 @@
 .section-heading {
   font-weight: 300;
   font-size: 30px;
-  margin: 30px 0px 40px 0px;
+  margin: 0px 0px 20px 0px;
   text-align: center;
-}
-.intro-explanation-wrapper {
-  display: none;
 }
 #intro-explanation {
   margin: 10px 20px;
