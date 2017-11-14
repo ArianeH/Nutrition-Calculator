@@ -21,15 +21,6 @@
   width: 200px;
   margin-bottom: 20px;
 }
-#fruit-select-dropdown {
-  // display: none;
-}
-#dairy-select-dropdown {
-  // display: none;
-}
-#nuts-select-dropdown {
-  // display: none;
-}
 button.main-selection-btn, button.main-selection-btn:focus {
   font-weight: lighter;
   background-color: rgba(136, 6, 6, 0.42) !important;
@@ -41,23 +32,20 @@ button.main-selection-btn:hover {
   background-color: rgba(136, 6, 6, 0.6) !important;
   color: white;
 }
-.select-btn {
+.select-btn, .sub-select-btn {
   background-color: white;
   color: black;
   border: none;
   text-align: left;
   width: 100%;
   font-weight: lighter;
+  display: block;
+  padding: 0px 5px;
 }
-.select-btn:hover {
+.select-btn:hover, .sub-select-btn:hover {
   background-color: #efefef;
   color: black;
   text-decoration: none;
-}
-.one-select {
-  display: block;
-  width: 100%;
-  padding: 0px 5px;
 }
 .dropdown-menu > li > a {
   background-color: white;

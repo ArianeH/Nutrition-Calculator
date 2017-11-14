@@ -37,7 +37,7 @@
             <% @nutrition_items.where(category: "Fruit").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "sub-select-btn one-select" %>
               </div>
             </li>
             <% end %>
@@ -54,7 +54,7 @@
             <% @nutrition_items.where(category: "Dairy").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "sub-select-btn one-select" %>
               </div>
             </li>
             <% end %>
@@ -70,7 +70,7 @@
             <% @nutrition_items.where(category: "Nuts and Seeds").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "sub-select-btn one-select" %>
               </div>
             </li>
             <% end %>

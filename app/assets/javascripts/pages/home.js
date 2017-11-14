@@ -3,15 +3,11 @@ $(document).ready(function() {
 
   $('.select-btn').click(function() {
     var idName = this.id;
-    $('.select-specific-dropdown').removeClass('visible');
+    $('.select-specific-dropdown').addClass('invisible');
     $('#' + idName + '-dropdown').removeClass('invisible');
-    $('#' + idName + '-dropdown').addClass('visible');
   })
 
   $('.one-select').click(function() {
-    // var className = $(this).children().attr('class');
-    // $('.nutrition-table').removeClass('visible');
-    // $('div.' + className).addClass('visible');
     $("#secondary-dropdown").dropdown("toggle");
     // $('.dropdown-menu').addClass('invisible');
     $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
