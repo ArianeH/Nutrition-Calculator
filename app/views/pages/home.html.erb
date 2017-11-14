@@ -15,18 +15,20 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
             <li>
-              <button class="select-btn fruit-select">Fruits</button>
+              <button class="select-btn" id="fruit-select">Fruits</button>
             </li>
             <li>
-              <button class="select-btn dairy-select">Dairy</button>
+              <button class="select-btn" id="dairy-select">Dairy</button>
             </li>
             <li>
-            <button class="select-btn nuts-select">Nuts and Seeds</button>
+            <button class="select-btn" id="nuts-select">Nuts and Seeds</button>
             </li>
           </ul>
         </div>
 
-        <div class="dropdown select-specific-dropdown select-fruit-dropdown">
+        <!-- <div class="select-dropdown-placeholder"></div> -->
+
+        <div class="dropdown select-specific-dropdown invisible" id="fruit-select-dropdown">
           <button class="btn main-selection-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Select Fruit Type
             <span class="caret"></span>
@@ -43,7 +45,7 @@
           </ul>
         </div>
 
-        <div class="dropdown select-specific-dropdown select-dairy-dropdown">
+        <div class="dropdown select-specific-dropdown invisible" id="dairy-select-dropdown">
           <button class="btn main-selection-btn dropdown-toggle" type="button" id="secondary-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Select Dairy Type
             <span class="caret"></span>
@@ -59,7 +61,7 @@
           </ul>
         </div>
 
-        <div class="dropdown select-specific-dropdown select-nuts-dropdown">
+        <div class="dropdown select-specific-dropdown invisible" id="nuts-select-dropdown">
           <button class="btn main-selection-btn dropdown-toggle" type="button" id="secondary-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Select Nut or Seed Type
             <span class="caret"></span>

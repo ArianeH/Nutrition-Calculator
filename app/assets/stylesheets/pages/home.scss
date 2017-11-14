@@ -21,14 +21,14 @@
   width: 200px;
   margin-bottom: 20px;
 }
-.select-fruit-dropdown {
-  display: none;
+#fruit-select-dropdown {
+  // display: none;
 }
-.select-dairy-dropdown {
-  display: none;
+#dairy-select-dropdown {
+  // display: none;
 }
-.select-nuts-dropdown {
-  display: none;
+#nuts-select-dropdown {
+  // display: none;
 }
 button.main-selection-btn, button.main-selection-btn:focus {
   font-weight: lighter;
@@ -107,6 +107,11 @@ a.select-btn:hover {
   .selected-food-text {
     margin-right: 20px;
   }
+}
+
+.select-dropdown-placeholder {
+  height: 100px;
+  visibility: hidden;
 }
 
 .visible {
