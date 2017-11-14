@@ -100,7 +100,11 @@ a.select-btn:hover {
   height: 59px;
   visibility: hidden;
 }
-
+@media (max-width: 650px) {
+  .calculator-heading {
+    font-size: 30px;
+  }
+}
 .visible {
   display: block;
 }

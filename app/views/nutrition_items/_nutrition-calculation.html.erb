@@ -1,64 +1,66 @@
-<div class="nutrition-calculation%>" >
+<div class="nutrition-calculation>" >
 
   <h2 class="nutrition-heading">Your Nutrition</h2>
-  <table class="one-nutrition-table">
-    <tr>
-      <th>Nutrient</th>
-      <th>Amount</th>
-      <th>Total Amount</th>
-      <th>% Daily Value</th>
-    </tr>
-    <tr>
-      <td>Calories</td>
-      <td><%= selected.calories %></td>
-      <td><%= sum_selected %></td>
-      <td><%= (sum_selected/1200.00*100.00).round(2) %></td>
-    </tr>
-    <tr>
-      <td>Protein</td>
-      <td><%= selected.protein %> g</td>
-      <td><%= sum_selected %></td>
-      <td><%= (sum_selected/1200.00*100.00).round(2) %></td>
-    </tr>
-    <tr>
-      <td>Carbs</td>
-      <td><%= selected.carbs %> g</td>
-    </tr>
-    <tr class="secondary-nutrition">
-      <td class="indented">Sugar</td>
-      <td><%= selected.sugar %> g</td>
-    </tr>
-    <tr class="secondary-nutrition">
-      <td class="indented">Fiber</td>
-      <td><%= selected.fiber %> g</td>
-    </tr>
-    <tr>
-      <td>Fat</td>
-      <td><%= selected.fat %> g</td>
-    </tr>
-    <tr class="secondary-nutrition">
-      <td class="indented">Saturated</td>
-      <td><%= selected.saturated %> g</td>
-    </tr>
-    <tr class="secondary-nutrition">
-      <td class="indented">Monounsaturated</td>
-      <td><%= selected.monounsaturated %> g</td>
-    </tr>
-    <tr class="secondary-nutrition">
-      <td class="indented">Polyunsaturated</td>
-      <td><%= selected.polyunsaturated %> g</td>
-    </tr>
-    <tr class="secondary-nutrition">
-      <td class="indented">Omega-3</td>
-      <td><%= selected.omega_3 %> g</td>
-    </tr>
-    <tr class="secondary-nutrition">
-      <td class="indented">Omega-6</td>
-      <td><%= selected.omega_6 %> g</td>
-    </tr>
-    <tr class="secondary-nutrition">
-      <td class="indented">Trans fat</td>
-      <td><%= selected.trans_fat %> g</td>
-    </tr>
-  </table>
+  <div class="scrollable">
+    <table class="one-nutrition-table">
+      <tr>
+        <th id="first-column">Nutrient</th>
+        <th>Amount</th>
+        <th>Total Amount</th>
+        <th>% Daily Value</th>
+      </tr>
+      <tr>
+        <td>Calories</td>
+        <td><%= selected.calories %></td>
+        <td><%= sum_selected %></td>
+        <td><%= (sum_selected/1200.00*100.00).round(2) %></td>
+      </tr>
+      <tr>
+        <td>Protein</td>
+        <td><%= selected.protein %> g</td>
+        <td><%= sum_selected %></td>
+        <td><%= (sum_selected/1200.00*100.00).round(2) %></td>
+      </tr>
+      <tr>
+        <td>Carbs</td>
+        <td><%= selected.carbs %> g</td>
+      </tr>
+      <tr class="secondary-nutrition">
+        <td class="indented">Sugar</td>
+        <td><%= selected.sugar %> g</td>
+      </tr>
+      <tr class="secondary-nutrition">
+        <td class="indented">Fiber</td>
+        <td><%= selected.fiber %> g</td>
+      </tr>
+      <tr>
+        <td>Fat</td>
+        <td><%= selected.fat %> g</td>
+      </tr>
+      <tr class="secondary-nutrition">
+        <td class="indented">Saturated</td>
+        <td><%= selected.saturated %> g</td>
+      </tr>
+      <tr class="secondary-nutrition">
+        <td class="indented">Monounsaturated</td>
+        <td><%= selected.monounsaturated %> g</td>
+      </tr>
+      <tr class="secondary-nutrition">
+        <td class="indented">Polyunsaturated</td>
+        <td><%= selected.polyunsaturated %> g</td>
+      </tr>
+      <tr class="secondary-nutrition">
+        <td class="indented">Omega-3</td>
+        <td><%= selected.omega_3 %> g</td>
+      </tr>
+      <tr class="secondary-nutrition">
+        <td class="indented">Omega-6</td>
+        <td><%= selected.omega_6 %> g</td>
+      </tr>
+      <tr class="secondary-nutrition">
+        <td class="indented">Trans fat</td>
+        <td><%= selected.trans_fat %> g</td>
+      </tr>
+    </table>
+  </div>
 </div>
