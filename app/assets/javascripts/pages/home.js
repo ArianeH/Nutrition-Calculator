@@ -8,7 +8,7 @@ $(document).ready(function() {
   })
 
   $('.one-select').click(function() {
-    $("#secondary-dropdown").dropdown("toggle");
+    $('#secondary-dropdown').dropdown('toggle');
     $('.container-selected-food').append('<div class="selected-food selected-food-'+i+'"></div>');
     $('.selected-food-'+i+'').html('<span class="selected-food-text">' + $(this).text() + '</span>' + ' <button class="close">&times;</button>');
     $('.placeholder-selected-food').addClass('invisible');
@@ -19,8 +19,8 @@ $(document).ready(function() {
   });
 
   $(".dropdown-menu li button").click(function(){
-    $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
-    $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+    $(this).parents('.dropdown').find('.btn').html($(this).text() + ' <span class="caret"></span>');
+    $(this).parents('.dropdown').find('.btn').val($(this).data('value'));
   });
 
 });
