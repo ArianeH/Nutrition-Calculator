@@ -6,6 +6,7 @@
   min-height: 40vh;
 }
 .banner {
+ position: relative;
  background: linear-gradient(rgba(109, 88, 56, 0.35), rgba(109, 88, 56, 0.35)), url("food.jpg") no-repeat center center fixed;
  background-size: cover;
  background-position: 0 -160px;
@@ -22,9 +23,11 @@
   text-align: center;
 }
 #start-btn {
+  position: absolute;
   padding: 10px 20px;
-  margin-left: 38%;
-  margin-top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 110px;
   border: none;
   font-size: 22px;
 }
@@ -34,7 +37,7 @@
 .section-heading {
   font-weight: 300;
   font-size: 30px;
-  margin: 0px 0px 20px 0px;
+  margin: 0px;
   text-align: center;
 }
 #intro-explanation {
@@ -52,16 +55,31 @@
   font-weight: lighter;
   text-align: center;
 }
+
+// @media (max-width: 1024px) {
+// }
+
+// @media (max-width: 950px) {
+// }
+
+// @media (max-width: 650px) {
+// }
+
+@media (max-width: 480px) {
+  .explain-item {
+    font-size: 16px;
+  }
+  #start-btn, {
+    font-size: 18px;
+    bottom: 70px;
+  }
+  #intro, .section-heading {
+    font-size: 24px;
+  }
+}
+
 .explain-icon {
   margin-bottom: 10px;
-}
-#more-info-btn {
-  content: url("arrow-down.png");
-  max-height: 100px;
-  margin-left: 46.5%;
-}
-#more-info-btn:hover {
-  cursor: pointer;
 }
 .fa-sort-desc {
   margin-top: -90px;
