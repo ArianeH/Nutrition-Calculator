@@ -2,9 +2,9 @@
   <div class="content-wrapper">
     <div class="row top-row">
 
-      <div class="col-xs-12 col-sm-5">
+      <div class="col-xs-12 col-sm-6">
 
-        <h2 class="calculator-heading">Calculating your daily nutrition</h2>
+        <h2 class="calculator-heading">Calculating Your Daily Nutrition</h2>
 
         <p class="intro-question">What did you eat?</p>
 
@@ -16,6 +16,9 @@
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
             <li>
               <button class="select-btn" id="fruit-select">Fruits</button>
+            </li>
+            <li>
+            <button class="select-btn" id="vegetable-select">Vegetables</button>
             </li>
             <li>
               <button class="select-btn" id="dairy-select">Dairy</button>
@@ -42,6 +45,22 @@
             </li>
             <% end %>
             <!-- <button class="select-btn one-select"><span class="apple-100">About 100 g of Apple</span></button> -->
+          </ul>
+        </div>
+
+        <div class="dropdown select-specific-dropdown invisible" id="vegetable-select-dropdown">
+          <button class="btn main-selection-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Vegetable Type
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
+            <% @nutrition_items.where(category: "Vegetable").each do |item| %>
+            <li>
+              <div class="calculate-link">
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "sub-select-btn one-select" %>
+              </div>
+            </li>
+            <% end %>
           </ul>
         </div>
 
@@ -81,7 +100,7 @@
 
       </div>
 
-      <div class="col-xs-12 col-sm-7">
+      <div class="col-xs-12 col-sm-6">
         <div id="result-partial">
           <% if @selected %>
           <%= render partial: 'nutrition-calculation', locals: { selected: @selected, sum_selected: @sum_selected } %>
