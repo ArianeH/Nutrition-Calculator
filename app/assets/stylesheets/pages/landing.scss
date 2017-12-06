@@ -1,5 +1,5 @@
 .landing-container {
-  background-image: linear-gradient(rgba(255, 209, 141, 0.25), rgba(255, 209, 141, 0.25)), url("whitey.png");
+  background-image: linear-gradient(rgba(255, 209, 141, 0.25), rgba(255, 209, 141, 0.25)), image-url("whitey.png");
   background-repeat:repeat;
   padding: 30px 20px 60px 20px;
   width: 100%;
@@ -7,7 +7,7 @@
 }
 .banner {
  position: relative;
- background: linear-gradient(rgba(109, 88, 56, 0.35), rgba(109, 88, 56, 0.35)), url("food.jpg") no-repeat center center fixed;
+ background: linear-gradient(rgba(109, 88, 56, 0.35), rgba(109, 88, 56, 0.35)), image-url("food.jpg") no-repeat center center fixed;
  background-size: cover;
  background-position: 0 -160px;
  height: 60vh;
