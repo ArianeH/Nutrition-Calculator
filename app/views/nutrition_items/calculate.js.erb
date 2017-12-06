@@ -9,7 +9,7 @@ function updateLinksWithNewSum() {
   for (index = 0; index < links.length; ++index) {
       link = links[index].firstElementChild 
 
-      var hrefWithUpdatedSum = link.getAttribute('href').replace(new RegExp("sum_selected=[^\d]+"), "sum_selected=<%= @sum_selected%>")
+      var hrefWithUpdatedSum = link.getAttribute('href').replace(new RegExp("sum_selected=[^\d]+"), "sum_calories=<%= @sum_selected%>")
       link.setAttribute("href", hrefWithUpdatedSum)
   }
 }

@@ -40,7 +40,7 @@
             <% @nutrition_items.where(category: "Fruit").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "sub-select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_calories: @sum_calories, sum_carbs: @sum_carbs,sum_protein: @sum_protein, sum_sugar: @sum_sugar, sum_fiber: @sum_fiber, sum_fat: @sum_fat, sum_saturated: @sum_saturated, sum_monounsaturated: @sum_monounsaturated, sum_polyunsaturated: @sum_polyunsaturated, sum_omega_3: @sum_omega_3, sum_omega_6: @sum_omega_6, sum_trans_fat: @sum_trans_fat), remote: true, class: "sub-select-btn one-select" %>
               </div>
             </li>
             <% end %>
@@ -57,7 +57,7 @@
             <% @nutrition_items.where(category: "Vegetable").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "sub-select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_calories: @sum_calories, sum_carbs: @sum_carbs,sum_protein: @sum_protein, sum_sugar: @sum_sugar, sum_fiber: @sum_fiber, sum_fat: @sum_fat, sum_saturated: @sum_saturated, sum_monounsaturated: @sum_monounsaturated, sum_polyunsaturated: @sum_polyunsaturated, sum_omega_3: @sum_omega_3, sum_omega_6: @sum_omega_6, sum_trans_fat: @sum_trans_fat), remote: true, class: "sub-select-btn one-select" %>
               </div>
             </li>
             <% end %>
@@ -73,7 +73,7 @@
             <% @nutrition_items.where(category: "Dairy").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "sub-select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_calories: @sum_calories, sum_carbs: @sum_carbs,sum_protein: @sum_protein, sum_sugar: @sum_sugar, sum_fiber: @sum_fiber, sum_fat: @sum_fat, sum_saturated: @sum_saturated, sum_monounsaturated: @sum_monounsaturated, sum_polyunsaturated: @sum_polyunsaturated, sum_omega_3: @sum_omega_3, sum_omega_6: @sum_omega_6, sum_trans_fat: @sum_trans_fat), remote: true, class: "sub-select-btn one-select" %>
               </div>
             </li>
             <% end %>
@@ -89,7 +89,7 @@
             <% @nutrition_items.where(category: "Nuts and Seeds").each do |item| %>
             <li>
               <div class="calculate-link">
-                <%= link_to item.name, calculate_path(selected_code: item.code, sum_selected: @sum_selected), remote: true, class: "sub-select-btn one-select" %>
+                <%= link_to item.name, calculate_path(selected_code: item.code, sum_calories: @sum_calories,sum_carbs: @sum_carbs, sum_protein: @sum_protein, sum_sugar: @sum_sugar, sum_fiber: @sum_fiber, sum_fat: @sum_fat, sum_saturated: @sum_saturated, sum_monounsaturated: @sum_monounsaturated, sum_polyunsaturated: @sum_polyunsaturated, sum_omega_3: @sum_omega_3, sum_omega_6: @sum_omega_6, sum_trans_fat: @sum_trans_fat), remote: true, class: "sub-select-btn one-select" %>
               </div>
             </li>
             <% end %>
@@ -103,7 +103,7 @@
       <div class="col-xs-12 col-sm-6">
         <div id="result-partial">
           <% if @selected %>
-          <%= render partial: 'nutrition-calculation', locals: { selected: @selected, sum_selected: @sum_selected } %>
+          <%= render partial: 'nutrition-calculation', locals: { selected: @selected } %>
           <% end %>
         </div>
       </div>
