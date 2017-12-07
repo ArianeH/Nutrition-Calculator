@@ -12,19 +12,29 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 38px;
     font-weight: 400;
-    color: white !important;
-    margin-left: -9px !important;
   }
 }
 .nav-up {
   top: -70px;
 }
 .dropdown-toggle, .dropdown-toggle:focus {
-  color: white !important;
-  background-color: transparent !important;
+  color: white;
+  background-color: transparent;
   margin-left: 32px;
 }
 .dropdown-menu {
   box-shadow: 1px 1px 10px #c7b79e;
   border-radius: 3px;
+}
+
+/* Changing default bootstrap */
+.navbar-default {
+  padding: 0px 6px;
+}
+.navbar-default .navbar-brand {
+  color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: white;
 }
