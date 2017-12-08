@@ -13,8 +13,8 @@
     font-weight: normal;
     min-width: 100px;
   }
-  #first-column {
-    min-width: 170px;
+  .first-column {
+    min-width: 150px;
   }
   td {
     font-size: 16px;
@@ -22,6 +22,9 @@
     line-height: 30px;
     border-bottom: solid 1px #d0c3af;
     padding: 0px 10px;
+  }
+  th:not(.first-column), td:not(.first-column) {
+    text-align: center;
   }
   .secondary-nutrition {
     color: dimgrey;
