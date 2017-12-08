@@ -18,67 +18,67 @@
       <tr>
         <td>Protein</td>
         <td><%= selected.protein %> g</td>
-        <td><%= sum_selected.protein %></td>
+        <td><%= sum_selected.protein.round(2) %></td>
         <td><%= (sum_selected.protein/1200.00*100.00).round(2) %></td>
       </tr>
       <tr>
         <td>Carbs</td>
         <td><%= selected.carbs %> g</td>
-        <td><%= sum_selected.carbs %></td>
+        <td><%= sum_selected.carbs.round(2) %></td>
         <td><%= (sum_selected.carbs/1200.00*100.00).round(2) %></td>
       </tr>
       <tr class="secondary-nutrition">
         <td class="indented">Sugar</td>
         <td><%= selected.sugar %> g</td>
-        <td><%= sum_selected.sugar %></td>
+        <td><%= sum_selected.sugar.round(2) %></td>
         <td><%= (sum_selected.sugar/1200.00*100.00).round(2) %></td>
       </tr>
       <tr class="secondary-nutrition">
         <td class="indented">Fiber</td>
         <td><%= selected.fiber %> g</td>
-        <td><%= sum_selected.fiber %></td>
+        <td><%= sum_selected.fiber.round(2) %></td>
         <td><%= (sum_selected.fiber/1200.00*100.00).round(2) %></td>
       </tr>
       <tr>
         <td>Fat</td>
         <td><%= selected.fat %> g</td>
-        <td><%= sum_selected.fat %></td>
+        <td><%= sum_selected.fat.round(2) %></td>
         <td><%= (sum_selected.fat/1200.00*100.00).round(2) %></td>
       </tr>
       <tr class="secondary-nutrition">
         <td class="indented">Saturated</td>
         <td><%= selected.saturated %> g</td>
-        <td><%= sum_selected.saturated %></td>
+        <td><%= sum_selected.saturated.round(2) %></td>
         <td><%= (sum_selected.saturated/1200.00*100.00).round(2) %></td>
       </tr>
       <tr class="secondary-nutrition">
         <td class="indented">Monounsaturated</td>
         <td><%= selected.monounsaturated %> g</td>
-        <td><%= sum_selected.monounsaturated %></td>
+        <td><%= sum_selected.monounsaturated.round(2) %></td>
         <td><%= (sum_selected.monounsaturated/1200.00*100.00).round(2) %></td>
       </tr>
       <tr class="secondary-nutrition">
         <td class="indented">Polyunsaturated</td>
         <td><%= selected.polyunsaturated %> g</td>
-        <td><%= sum_selected.polyunsaturated %></td>
+        <td><%= sum_selected.polyunsaturated.round(2) %></td>
         <td><%= (sum_selected.polyunsaturated/1200.00*100.00).round(2) %></td>
       </tr>
       <tr class="secondary-nutrition">
         <td class="indented">Omega-3</td>
         <td><%= selected.omega_3 %> g</td>
-        <td><%= sum_selected.omega_3 %></td>
+        <td><%= sum_selected.omega_3.round(2) %></td>
         <td><%= (sum_selected.omega_3/1200.00*100.00).round(2) %></td>
       </tr>
       <tr class="secondary-nutrition">
         <td class="indented">Omega-6</td>
         <td><%= selected.omega_6 %> g</td>
-        <td><%= sum_selected.omega_6 %></td>
+        <td><%= sum_selected.omega_6.round(2) %></td>
         <td><%= (sum_selected.omega_6/1200.00*100.00).round(2) %></td>
       </tr>
       <tr class="secondary-nutrition">
         <td class="indented">Trans fat</td>
         <td><%= selected.trans_fat %> g</td>
-        <td><%= sum_selected.trans_fat %></td>
+        <td><%= sum_selected.trans_fat.round(2) %></td>
         <td><%= (sum_selected.trans_fat/1200.00*100.00).round(2) %></td>
       </tr>
     </table>
