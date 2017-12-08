@@ -1,4 +1,4 @@
-$('#result-partial').html("<%= escape_javascript(render partial: 'nutrition-calculation', locals: { selected: @selected, sum_selected: @sum_selected }) %>");
+$('#result-partial').html("<%= escape_javascript(render partial: 'nutrition-calculation', locals: { selected: @selected, sum_selected: @selected_sum }) %>");
 
 updateLinksWithNewSum()
 
@@ -7,9 +7,21 @@ function updateLinksWithNewSum() {
   var links = $('.calculate-link')
 
   for (index = 0; index < links.length; ++index) {
-      link = links[index].firstElementChild 
+    link = links[index].firstElementChild 
+    
+    var updatedHref = document.getElementsByClassName('calculate-link')[0].firstElementChild.getAttribute('href').split('&')[0] 
+    + "&sum_calories=<%= @selected_sum.calories%>"
+    + "&sum_fat=<%= @selected_sum.fat%>"
+    + "&sum_fiber=<%= @selected_sum.fiber%>"
+    + "&sum_monounsaturated=<%= @selected_sum.monounsaturated%>"
+    + "&sum_omega_3=<%= @selected_sum.omega_3%>"
+    + "&sum_omega_6=<%= @selected_sum.omega_6%>"
+    + "&sum_polyunsaturated=<%= @selected_sum.polyunsaturated%>"
+    + "&sum_protein=<%= @selected_sum.protein%>"
+    + "&sum_saturated=<%= @selected_sum.saturated%>"
+    + "&sum_sugar=<%= @selected_sum.sugar%>"
+    + "&sum_trans_fat=<%= @selected_sum.trans_fat%>"
 
-      var hrefWithUpdatedSum = link.getAttribute('href').replace(new RegExp("sum_selected=[^\d]+"), "sum_selected=<%= @sum_selected%>")
-      link.setAttribute("href", hrefWithUpdatedSum)
+    link.setAttribute("href", updatedHref)
   }
 }
